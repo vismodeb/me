@@ -2,7 +2,7 @@
 
 Name: 		Portfolio
 Version:  1.0
-Author:		Gouranga Roy (web developer)
+Author:		Vismo Dev (web developer)
 Portfolio:  ;
 
 ------------------------------------------- */
@@ -16,6 +16,7 @@ Portfolio:  ;
 }
 html {
   font-size: 65.5%;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -494,13 +495,13 @@ $peraColor: #8c8c8e;
     object-fit: cover;
   }
 }
-.tablet-device-profile{
+.tablet-device-profile {
   width: 9rem;
   height: 9rem;
   position: relative;
-  margin:2rem auto;
+  margin: 2rem auto;
   display: none;
-  .hover-zome{
+  .hover-zome {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -508,7 +509,11 @@ $peraColor: #8c8c8e;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background: linear-gradient(159deg, rgba(45, 45, 58, 0.88) 0%, rgba(43, 43, 53, 0.88) 100%);
+    background: linear-gradient(
+      159deg,
+      rgba(45, 45, 58, 0.88) 0%,
+      rgba(43, 43, 53, 0.88) 100%
+    );
     font-size: 1.4rem;
     text-align: center;
     display: -webkit-box;
@@ -526,13 +531,13 @@ $peraColor: #8c8c8e;
     visibility: hidden;
     -webkit-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
-    i{
+    i {
       -webkit-transition: all 0.5s ease-in;
       transition: all 0.5s ease-in;
       color: #fff;
     }
   }
-  &:hover .hover-zome{
+  &:hover .hover-zome {
     opacity: 0.7;
     visibility: visible;
   }
@@ -540,7 +545,7 @@ $peraColor: #8c8c8e;
 .banner-profile-img {
   margin-top: -23px;
 }
-.tablet-device-profile img{
+.tablet-device-profile img {
   max-width: 100%;
   border-radius: 50%;
 }
